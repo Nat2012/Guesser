@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="Guessthenumber.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Welcome To the <strong>Guess The Number</strong></h2>
+    <ol>
+        <li>A random number is to be provided.</li>
+        <li>Try to guess the number.</li>
+        <li>Write it down in the space provided.</li>
+        <li>Have Fun!</li>
+    </ol>
+    <div>
+        <input type="text" id="input" name="input" placeholder="Type Number Here">
+        <button id="btn" onclick="guessTheNumber()">Click To Check</button>
+        <p id="answer"></p>
+    </div>
+</body>
+<script>
+    function guessTheNumber() {
+    let input = document.getElementById("input").value
+    let a = Math.round((Math.random() * 100)) 
+    let streinput = input.toString()
+    let strea = a.toString()
+    if (streinput == strea) {
+        document.getElementById("answer").innerText = "Correct"
+        document.getElementById("answer").style.color = "green"
+    }
+    if (streinput !== strea) {
+        document.getElementById("answer").innerText = "Wrong"
+        document.getElementById("answer").style.color = "red"
+    }
+    }
+</script>
+</html>

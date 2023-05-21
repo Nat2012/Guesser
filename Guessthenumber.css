@@ -1,0 +1,41 @@
+body{
+    background-color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+ol{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+#input{
+    display: flex;
+    background-color: brown;
+    border: 0;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 500px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#btn{
+    display: flex;
+    margin-left: 570px;
+    margin-top: 40px;
+    border-radius: 50px;
+    background-color: blue;
+}
+
+#answer{
+    display: flex;
+    margin-left: 600px;
+    margin-top: 40px;   
+    font-size: large;
+    font-weight: bold;
+}
